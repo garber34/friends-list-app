@@ -1,0 +1,39 @@
+{
+  "name": "friends-list-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node db/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon index.js",
+    "build-watch": "webpack -w",
+    "build": "webpack",
+    "start": "npm run start:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garber34/friends-list-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garber34/friends-list-app/issues"
+  },
+  "homepage": "https://github.com/garber34/friends-list-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.4",
+    "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
